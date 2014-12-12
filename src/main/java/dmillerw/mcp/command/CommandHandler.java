@@ -6,6 +6,7 @@ import jline.console.ConsoleReader;
 import jline.console.completer.StringsCompleter;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -29,6 +30,11 @@ public class CommandHandler {
         registerCommand(new CommandGetType());
         registerCommand(new CommandGetMethod());
         registerCommand(new CommandGetField());
+        registerCommand(new CommandHelp());
+    }
+
+    public static Collection<Command> getCommands() {
+        return commandMap.values();
     }
 
     public static void registerCompleters(ConsoleReader consoleReader) {
