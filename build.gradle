@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'jline', name: 'jline', version: '2.12'
+    compile group: 'com.google.guava', name: 'guava', version: '18.0'
+}
