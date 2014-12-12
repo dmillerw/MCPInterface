@@ -1,7 +1,6 @@
 .gradle/
 .idea/
 cache/
-gradle/
 mapping/
 out/
 
