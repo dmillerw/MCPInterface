@@ -2,6 +2,7 @@
 .idea/
 cache/
 mapping/
+!src/main/java/dmillerw/mcp/mapping/
 out/
 
 *.iml
